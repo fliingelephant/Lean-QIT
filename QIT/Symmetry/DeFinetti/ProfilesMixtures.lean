@@ -38,7 +38,7 @@ variable [Fintype ι] [Fintype a] [DecidableEq a]
 
 local instance deFinettiCMatrixContinuousENorm {α : Type v} [Fintype α] [DecidableEq α] :
     ContinuousENorm (CMatrix α) :=
-  SeminormedAddGroup.toContinuousENorm
+  inferInstance
 
 namespace TensorPower
 

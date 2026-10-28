@@ -472,7 +472,7 @@ theorem branchSourceReferenceAmplitude_eq_zero_of_branchWeight_eq_zero
   have hrank := M.rankOne_postAmplitude_eq_zero_of_branchWeight_eq_zero psi i hi
   ext ar e
   have hdiag := congrFun (congrFun hrank (ar.1, (ar.2, e))) (ar.1, (ar.2, e))
-  exact (CStarRing.mul_star_self_eq_zero_iff _).mp (by
+  exact mul_star_self_eq_zero.mp (by
     simpa [rankOneMatrix_apply, branchSourceReferenceAmplitude] using hdiag)
 
 /-- Berta's refined-instrument inequality in unnormalized scale form, first

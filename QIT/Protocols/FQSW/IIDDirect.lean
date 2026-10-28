@@ -28,7 +28,7 @@ noncomputable section
 
 local instance fqswIIDDirectCMatrixContinuousENorm {ι : Type*} [Fintype ι] [DecidableEq ι] :
     ContinuousENorm (CMatrix ι) :=
-  SeminormedAddGroup.toContinuousENorm
+  inferInstance
 
 variable {a : Type u} {b : Type v} {r : Type w}
 variable {q : Type x} {e : Type y} {et : Type z}

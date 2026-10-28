@@ -50,7 +50,7 @@ variable {a : Type u} [Fintype a] [DecidableEq a]
 
 local instance unitaryTwirlCMatrixContinuousENorm {ι : Type u} [Fintype ι] [DecidableEq ι] :
     ContinuousENorm (CMatrix ι) :=
-  SeminormedAddGroup.toContinuousENorm
+  inferInstance
 
 namespace Matrix
 

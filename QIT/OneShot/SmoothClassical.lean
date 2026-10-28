@@ -1302,7 +1302,7 @@ private theorem coherentLift_row_zero_of_not_copy
           (Psi.amplitudeMatrix i r₁).im *
             (Psi.amplitudeMatrix i r₁).re = 0
       ring
-  exact (CStarRing.mul_star_self_eq_zero_iff _).mp hzprod
+  exact mul_star_self_eq_zero.mp hzprod
 
 private theorem coherentLiftAmplitude_overlap
     {r : Type*} [Fintype r] [DecidableEq r]

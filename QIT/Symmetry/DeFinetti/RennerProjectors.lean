@@ -25,7 +25,7 @@ variable [Fintype ι] [Fintype a] [DecidableEq a]
 local instance deFinettiRennerProjectorsCMatrixContinuousENorm
     {α : Type v} [Fintype α] [DecidableEq α] :
     ContinuousENorm (CMatrix α) :=
-  SeminormedAddGroup.toContinuousENorm
+  inferInstance
 
 omit [Fintype a] [DecidableEq a] in
 private theorem cMatrix_eq_zero_of_posSemidef_and_neg_posSemidef_general

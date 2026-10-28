@@ -25,7 +25,7 @@ variable [Fintype ι] [Fintype a] [DecidableEq a]
 local instance deFinettiDominationCMatrixContinuousENorm
     {α : Type v} [Fintype α] [DecidableEq α] :
     ContinuousENorm (CMatrix α) :=
-  SeminormedAddGroup.toContinuousENorm
+  inferInstance
 
 namespace State
 

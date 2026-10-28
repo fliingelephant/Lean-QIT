@@ -11,6 +11,7 @@ public import Mathlib.Analysis.SpecialFunctions.Log.ENNRealLogExp
 public import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
 public import Mathlib.LinearAlgebra.Lagrange
 public import Mathlib.Topology.Instances.EReal.Lemmas
+public import Mathlib.Analysis.Calculus.LocalExtr.Basic
 
 /-!
 # Binary hypothesis test spectral API: classical layer

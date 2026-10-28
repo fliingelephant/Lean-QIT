@@ -25,7 +25,7 @@ variable [Fintype ι] [Fintype a] [DecidableEq a]
 local instance deFinettiTwirlingCMatrixContinuousENorm
     {α : Type v} [Fintype α] [DecidableEq α] :
     ContinuousENorm (CMatrix α) :=
-  SeminormedAddGroup.toContinuousENorm
+  inferInstance
 
 /-- CKR post-selection reference state on `H^n × H^n`.
 

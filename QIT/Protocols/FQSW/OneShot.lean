@@ -34,7 +34,7 @@ noncomputable section
 
 local instance fqswCMatrixContinuousENorm {ι : Type*} [Fintype ι] [DecidableEq ι] :
     ContinuousENorm (CMatrix ι) :=
-  SeminormedAddGroup.toContinuousENorm
+  inferInstance
 
 private instance fqswUnitaryHaarMeasure_isMulRightInvariant {ι : Type u}
     [Fintype ι] [DecidableEq ι] [Nonempty ι] :

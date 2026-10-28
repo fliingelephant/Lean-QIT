@@ -10,6 +10,7 @@ public import QIT.Information.Renyi.SandwichedMutualInformation
 public import QIT.Information.Renyi.FrankLieb.DPI
 public import Mathlib.Analysis.Calculus.Deriv.Basic
 public import Mathlib.Analysis.Calculus.Deriv.MeanValue
+public import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
 
 /-!
 # Sandwiched Renyi monotonicity support

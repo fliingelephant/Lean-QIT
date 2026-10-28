@@ -50,7 +50,7 @@ noncomputable local instance cMatrixCStarAlgebra
 
 noncomputable instance cMatrixContinuousENorm
     {a : Type u} [Fintype a] [DecidableEq a] : ContinuousENorm (CMatrix a) :=
-  SeminormedAddGroup.toContinuousENorm
+  inferInstance
 
 noncomputable instance cMatrixENormedAddMonoid
     {a : Type u} [Fintype a] [DecidableEq a] : ENormedAddMonoid (CMatrix a) :=

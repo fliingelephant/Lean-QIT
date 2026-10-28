@@ -25,7 +25,7 @@ variable [Fintype ι] [Fintype a] [DecidableEq a]
 local instance deFinettiPostselectionCMatrixContinuousENorm
     {α : Type v} [Fintype α] [DecidableEq α] :
     ContinuousENorm (CMatrix α) :=
-  SeminormedAddGroup.toContinuousENorm
+  inferInstance
 
 private theorem dropRightUnitMatrix_kron_id_traceEffectToUnit_apply
     {α β : Type u} [Fintype α] [DecidableEq α] [Fintype β] [DecidableEq β]

@@ -43,7 +43,7 @@ variable {a : Type u} {e : Type v}
 
 local instance decouplingCMatrixContinuousENorm {ι : Type*} [Fintype ι] [DecidableEq ι] :
     ContinuousENorm (CMatrix ι) :=
-  SeminormedAddGroup.toContinuousENorm
+  inferInstance
 
 noncomputable local instance decouplingMatrixCStarAlgebra {ι : Type u}
     [Fintype ι] [DecidableEq ι] :
