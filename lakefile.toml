@@ -9,3 +9,14 @@ rev = "v4.35.0"
 [[lean_lib]]
 name = "QIT"
 moreLeanArgs = ["-DautoImplicit=false"]
+
+# LeanBlame tags for OpenVouch: the `trusted` attribute, pinned so that a commit fixes the whole build.
+[[require]]
+name = "leanblame"
+git = "https://github.com/fliingelephant/leanblame.git"
+rev = "45160cc9c5a8c7cdbbaa2437d313ab1ed07bcf0d"
+subDir = "cli"
+
+# The tags, written after the fact (`attribute [trusted "id"] Name`): `leanblame export --lib QIT --lib Tags`.
+[[lean_lib]]
+name = "Tags"
