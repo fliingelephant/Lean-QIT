@@ -14,7 +14,7 @@ moreLeanArgs = ["-DautoImplicit=false"]
 [[require]]
 name = "leanblame"
 git = "https://github.com/fliingelephant/leanblame.git"
-rev = "45160cc9c5a8c7cdbbaa2437d313ab1ed07bcf0d"
+rev = "b4118e1fd591455acf7c8c6cd7d51c18d6a56693"
 subDir = "cli"
 
 # The tags, written after the fact (`attribute [trusted "id"] Name`): `leanblame export --lib QIT --lib Tags`.
